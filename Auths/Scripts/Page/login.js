@@ -18,6 +18,7 @@ $(function () {
     });
 
     $("#login-button").click(function () {
+
         if (!$("input[name=account]").val()) {
             alert("请输入用户编号");
             return false;

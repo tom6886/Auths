@@ -4,8 +4,8 @@ using Utils;
 
 namespace Auths.Models
 {
-    [Table("Guser")]
-    public class Guser : BaseObj
+    [Table("IUser")]
+    public class IUser : BaseObj
     {
         [Display(Name = "用户编号"), MaxLength(0x40), Required]
         public string Account { get; set; }
@@ -37,7 +37,7 @@ namespace Auths.Models
         public string PinYin1 { get; set; }
 
         [ForeignKey("RoleId")]
-        public virtual Role Role { get; set; }
+        public virtual IRole Role { get; set; }
 
         [MaxLength(200)]
         public string RoleId { get; set; }

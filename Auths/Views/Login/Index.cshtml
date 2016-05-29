@@ -5,8 +5,10 @@
 
 <h1>Welcome</h1>
 <form class="form" id="form_login" action="login/signin" method="post">
-    <input type="text" placeholder="用户名">
-    <input type="password" placeholder="密码">
+    <input type="text" name="account" placeholder="用户名">
+    <input type="password" name="pwd" placeholder="密码">
     <button type="submit" id="login-button">登录</button>
 </form>
+
+@Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/Scripts/Page/login.js")
